@@ -5,14 +5,15 @@ import os
 
 first_name, last_name = input("Enter your first name and last name").split()
 
-time_table = {"day_of_the week": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-              "hours_worked":[],
-              "wfh": []
+days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
+time_table = {"day_of_the week": [],
+              "hours_worked[": [],
+              "wfh" : []
             }
 
-timetable = pd.DataFrame(time_table)
+timetable_df = pd.DataFrame()
 
-print(timetable)
+print(timetable_df.to_markdown())
 # add hours worked to data frame
 # ask for day of the week
 # ask hours worked today
